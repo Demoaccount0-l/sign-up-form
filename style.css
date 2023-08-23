@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    
 }
 
 div.container {
@@ -57,17 +59,11 @@ div.content{
 }
 
 div.info, div.info2{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding:0 4rem;
 }
 
-div.formcontainer{
-    border: 0 solid grey;
-    box-shadow: 4px 2px 3px 4px white;
-    background: white;
-    color: black;
-    padding: 2.5rem;
-}
+
 .formheading{
     padding: 15px 0px;
     font-size: 1.5rem;
@@ -92,16 +88,54 @@ div.firstname, div.lastname, div.email, div.phoneno, div.password, div.confirmpa
 div.button, div.login{
     padding: 0rem 4rem;
     margin-top: 1rem;
-}
-
-button#button{
-    width: 10rem;
-    height: 3rem;
-    padding: 10px;
     font-size: 1.2rem;
 }
 
+button#button{
+    width: 11.2rem;
+    height: 3rem;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
 input{
-    width:12rem;
+    width:13rem;
     height:1.8rem;
+    border: 2px solid rgb(219 213 213);
+    border-radius: 5px;
+}
+
+label{
+    margin-bottom: 0.5rem;
+}
+
+div.inputitems{
+    border: 1px solid black;
+    background: white;
+    padding: 3rem;
+    box-shadow: 2px 2px 3px 4px inset white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.2rem;
+    margin-left: 8px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+
+button#button:hover{
+    cursor: pointer;
+    background-color: green;
 }
